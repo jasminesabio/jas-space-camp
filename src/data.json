@@ -1,0 +1,178 @@
+{
+  "event": {
+    "title": "Space Camp Bachelorette",
+    "host": "Jasmine",
+    "dates": "January 30 - February 1, 2026",
+    "location": "U.S. Space & Rocket Center, Huntsville, AL",
+    "weddingDate": "March 7, 2026"
+  },
+  "spaceCamp": {
+    "about": "Experience a weekend as an astronaut! The Adult Space Academy is a 3-day, 2-night immersive training program for adults (18+) at the U.S. Space & Rocket Center in Huntsville, Alabama. Assume real astronaut roles, complete hands-on space missions, and graduate as trained astronauts!",
+    "included": [
+      "Multi-Axis Trainer (MAT) astronaut training",
+      "Model rocket construction and launch",
+      "Low Elements Ropes Course team-building",
+      "Heat shield design engineering challenges",
+      "Simulated space mission participation",
+      "Onsite overnight accommodations (2 nights)",
+      "All meals from Friday dinner through Sunday breakfast",
+      "Graduation ceremony"
+    ],
+    "notIncluded": [
+      "Travel to/from Huntsville",
+      "Alcohol or outside food/beverages",
+      "Weapons or expensive electronics"
+    ]
+  },
+  "expenses": {
+    "spaceCampTuition": {
+      "amount": "$799",
+      "description": "Adult Space Academy tuition per person (includes 2 nights accommodations and all meals)"
+    },
+    "additionalCosts": [
+      {
+        "item": "Travel to Huntsville",
+        "estimatedCost": "Varies",
+        "notes": "Round-trip flights, rental car, or driving costs"
+      },
+      {
+        "item": "Optional Local Activities",
+        "estimatedCost": "$50-150",
+        "notes": "Downtown Huntsville exploring, restaurants beyond Space Camp meals, breweries, museums"
+      },
+      {
+        "item": "Souvenirs & Extras",
+        "estimatedCost": "$20-50",
+        "notes": "Mission patches, photos, space memorabilia from gift shop"
+      }
+    ],
+    "totalEstimate": "$869-999+ per person (before travel costs)"
+  },
+  "guests": [
+    {
+      "name": "Jasmine",
+      "role": "Space Commander",
+      "travelingFrom": "Mexico City, Mexico"
+    },
+    {
+      "name": "Jesse",
+      "role": "Mission Commander",
+      "travelingFrom": "Cavite, Philippines"
+    },
+    {
+      "name": "Angela",
+      "role": "Space Cadet",
+      "travelingFrom": "Mexico City, Mexico"
+    },
+    {
+      "name": "Becky",
+      "role": "Space Cadet",
+      "travelingFrom": "Mexico City, Mexico"
+    },
+    {
+      "name": "Christina",
+      "role": "Space Cadet",
+      "travelingFrom": "Brooklyn, New York"
+    },
+    {
+      "name": "Deena",
+      "role": "Space Cadet",
+      "travelingFrom": "Los Angeles, California"
+    },
+    {
+      "name": "Dyson",
+      "role": "Space Cadet",
+      "travelingFrom": "Los Angeles, California"
+    },
+    {
+      "name": "Emily",
+      "role": "Space Cadet",
+      "travelingFrom": "Brooklyn, New York"
+    },
+    {
+      "name": "Erin",
+      "role": "Space Cadet",
+      "travelingFrom": "Brooklyn, New York"
+    },
+    {
+      "name": "Fernanda",
+      "role": "Space Cadet",
+      "travelingFrom": "San Diego, California"
+    },
+    {
+      "name": "Garrett",
+      "role": "Space Cadet",
+      "travelingFrom": "Portland, Oregon"
+    },
+    {
+      "name": "Kayla",
+      "role": "Space Cadet",
+      "travelingFrom": "Portland, Oregon"
+    },
+    {
+      "name": "Ross",
+      "role": "Space Cadet",
+      "travelingFrom": "Brooklyn, New York"
+    },
+    {
+      "name": "Yulia",
+      "role": "Space Cadet",
+      "travelingFrom": "Mexico City, Mexico"
+    }
+  ],
+  "packingGuide": {
+    "essentials": [
+      "Closed-toe athletic shoes (required for all training activities)",
+      "Comfortable athletic/casual clothing for 3 days",
+      "Pajamas for 2 nights",
+      "Toiletries and any necessary medications",
+      "Phone/camera charger",
+      "ID or driver's license (needed for check-in)",
+      "Underwear and socks for 3 days",
+      "Layers - indoor facilities can be cool"
+    ],
+    "optional": [
+      "Space-themed outfit or accessories for fun photos",
+      "Notebook and pen for mission notes",
+      "Light jacket or sweatshirt",
+      "Sunglasses and sunscreen",
+      "Comfortable shoes for casual wear",
+      "Extra phone charger",
+      "Cash for gift shop souvenirs"
+    ],
+    "dontBring": [
+      "Outside food or beverages",
+      "Alcohol or drugs",
+      "Weapons of any kind",
+      "Expensive electronics beyond phone/camera",
+      "Valuable jewelry",
+      "Large luggage (space is limited)"
+    ]
+  },
+  "recommendations": [
+    {
+      "title": "The Martian",
+      "types": ["Movie", "Book"],
+      "year": "2015",
+      "author": "Andy Weir",
+      "why": "Stranded on Mars with science and humor. Available as both book and movie!"
+    },
+    {
+      "title": "Arrival",
+      "types": ["Movie"],
+      "year": "2016",
+      "why": "Stunning sci-fi about communication with aliens"
+    },
+    {
+      "title": "The Expanse",
+      "types": ["TV Show"],
+      "why": "Epic space opera set across the solar system"
+    },
+    {
+      "title": "Three Body Problem",
+      "types": ["Book", "TV Show"],
+      "author": "Liu Cixin",
+      "why": "Mind-bending first contact hard sci-fi. Experience it both ways!"
+    }
+  ]
+}
