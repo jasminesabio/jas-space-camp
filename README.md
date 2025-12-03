@@ -1,70 +1,186 @@
-# Getting Started with Create React App
+# Space Camp Bachelorette Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A retro NASA-themed website for Jasmine's Space Camp Bachelorette Party at the U.S. Space & Rocket Center in Huntsville, Alabama.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Retro space age design with vintage NASA vibes
+- Easy navigation with smooth scrolling sections
+- Responsive design for mobile and desktop
+- All content editable through a simple JSON file
 
-### `npm start`
+## Quick Start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Running the Website Locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Navigate to the project directory:
+   ```bash
+   cd space-camp-bachelorette
+   ```
 
-### `npm test`
+2. Install dependencies (first time only):
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The page will automatically reload when you make changes!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Editing Content
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+All website content is stored in a single, easy-to-edit JSON file:
 
-### `npm run eject`
+**`src/data.json`**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### How to Update Information
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Open `src/data.json` in any text editor
+2. Find the section you want to edit
+3. Update the text between the quotation marks
+4. Save the file
+5. The website will automatically update!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### What You Can Edit
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Event Details
+```json
+"event": {
+  "title": "Space Camp Bachelorette",
+  "bride": "Jasmine",
+  "dates": "January 30 - February 1, 2026",
+  ...
+}
+```
 
-## Learn More
+#### Space Camp Information
+- About description
+- What's included in the program
+- What's not included
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Expenses
+- Space camp tuition amount
+- Additional costs (hotels, meals, activities)
+- Estimated totals
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Guest Directory
+Add or modify guests:
+```json
+{
+  "name": "Guest Name",
+  "role": "Space Cadet",
+  "funFact": "Add a fun fact here!",
+  "hometown": "Add hometown"
+}
+```
 
-### Code Splitting
+#### Packing Guide
+- Essentials list
+- Optional items
+- Things not to bring
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Recommendations
+- Movies (title, year, why)
+- Books (title, author, why)
 
-### Analyzing the Bundle Size
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Option 1: Netlify (Recommended - Free and Easy)
 
-### Making a Progressive Web App
+1. Push your code to GitHub
+2. Go to [netlify.com](https://netlify.com) and sign up
+3. Click "New site from Git"
+4. Connect your GitHub repository
+5. Build command: `npm run build`
+6. Publish directory: `build`
+7. Click "Deploy site"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+You'll get a free URL like `your-site.netlify.app`
 
-### Advanced Configuration
+### Option 2: Vercel (Also Free)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com) and sign up
+3. Click "New Project"
+4. Import your GitHub repository
+5. Click "Deploy"
 
-### Deployment
+### Option 3: GitHub Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Build the site:
+   ```bash
+   npm run build
+   ```
 
-### `npm run build` fails to minify
+2. Install the gh-pages package:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Add to `package.json`:
+   ```json
+   "homepage": "https://yourusername.github.io/space-camp-bachelorette",
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
+
+4. Deploy:
+   ```bash
+   npm run deploy
+   ```
+
+## Customization
+
+### Changing Colors
+
+Edit the color variables in `src/App.css`:
+
+```css
+:root {
+  --retro-orange: #FF6B35;
+  --retro-red: #D32F2F;
+  --retro-blue: #004E89;
+  --retro-navy: #1A1A2E;
+  --retro-cream: #F7F3E9;
+  --retro-yellow: #FFB627;
+  --retro-teal: #00A5A5;
+  --space-black: #0B0C10;
+}
+```
+
+### Adding More Sections
+
+1. Add your content to `src/data.json`
+2. Create a new section in `src/App.js` following the existing pattern
+3. Add a navigation button for the new section
+
+## Troubleshooting
+
+**The site won't start:**
+- Make sure you've run `npm install` first
+- Check that Node.js is installed: `node --version`
+
+**Changes aren't showing:**
+- Make sure you saved the file
+- Check the browser console for errors
+- Try refreshing the page with Cmd+Shift+R (Mac) or Ctrl+Shift+R (Windows)
+
+**JSON file has errors:**
+- Make sure all quotes are closed
+- Check that commas are in the right places
+- Use a JSON validator online if needed
+
+## Support
+
+For React-specific questions, see the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+---
+
+Have an amazing time at Space Camp! See you among the stars!

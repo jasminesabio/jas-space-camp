@@ -347,8 +347,8 @@ body::after {
 /* Expenses */
 .expense-card {
   background: linear-gradient(135deg, rgba(255, 110, 199, 0.1), rgba(180, 228, 255, 0.1));
-  padding: 1.25rem;
-  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
   border-left: 4px solid var(--vaporwave-pink);
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(255, 16, 240, 0.15);
@@ -364,37 +364,34 @@ body::after {
 .expense-card h3 {
   color: var(--vaporwave-purple);
   font-family: 'Fredoka', sans-serif;
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
 .expense-amount {
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: linear-gradient(45deg, var(--vaporwave-pink), var(--cyber-blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
-  margin: 0.4rem 0;
+  margin: 0.2rem 0;
   font-family: 'Fredoka', sans-serif;
 }
 
 .total-estimate {
-  background: linear-gradient(135deg, var(--vaporwave-pink), var(--vaporwave-purple));
-  color: white;
-  padding: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--vaporwave-purple);
+  padding: 1rem 1.5rem;
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
   font-family: 'Fredoka', sans-serif;
-  border-radius: 25px;
-  margin-top: 2rem;
-  box-shadow: 0 10px 40px rgba(255, 16, 240, 0.4),
-              0 0 30px rgba(0, 240, 255, 0.3),
-              inset 0 2px 10px rgba(255, 255, 255, 0.2);
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+  border-radius: 15px;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 15px rgba(255, 16, 240, 0.1);
+  border: 2px solid rgba(255, 16, 240, 0.2);
 }
 
 /* Guest Directory */

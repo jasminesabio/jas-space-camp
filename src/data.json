@@ -139,39 +139,35 @@
       "Comfortable shoes for casual wear",
       "Extra phone charger",
       "Cash for gift shop souvenirs"
-    ],
-    "dontBring": [
-      "Outside food or beverages",
-      "Alcohol or drugs",
-      "Weapons of any kind",
-      "Expensive electronics beyond phone/camera",
-      "Valuable jewelry",
-      "Large luggage (space is limited)"
     ]
   },
   "recommendations": [
     {
       "title": "The Martian",
-      "types": ["Movie", "Book"],
-      "year": "2015",
+      "types": ["Book", "Movie"],
       "author": "Andy Weir",
+      "year": "2011 (Book) / 2015 (Movie)",
       "why": "Stranded on Mars with science and humor. Available as both book and movie!"
     },
     {
       "title": "Arrival",
       "types": ["Movie"],
+      "author": "Denis Villeneuve (Director)",
       "year": "2016",
       "why": "Stunning sci-fi about communication with aliens"
     },
     {
       "title": "The Expanse",
       "types": ["TV Show"],
+      "author": "James S. A. Corey",
+      "year": "2015",
       "why": "Epic space opera set across the solar system"
     },
     {
       "title": "Three Body Problem",
       "types": ["Book", "TV Show"],
       "author": "Liu Cixin",
+      "year": "2008 (Book) / 2023 (TV Show)",
       "why": "Mind-bending first contact hard sci-fi. Experience it both ways!"
     }
   ]

@@ -144,13 +144,6 @@ function App() {
               <li key={index}>{item}</li>
             ))}
           </ul>
-
-          <h3 className="section-subtitle">Don't Bring</h3>
-          <ul className="checklist x-list">
-            {data.packingGuide.dontBring.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
         </section>
 
         <section id="recommendations" className="section">
@@ -169,7 +162,7 @@ function App() {
                 <h3>{item.title}</h3>
                 <div className="recommendation-meta">
                   {item.year && <span>{item.year}</span>}
-                  {item.author && <span>by {item.author}</span>}
+                  {item.author && <span> by {item.author}</span>}
                 </div>
                 <div className="recommendation-why">{item.why}</div>
               </div>
@@ -180,6 +173,7 @@ function App() {
 
       <footer className="footer">
         <p>See you in space, astronauts! </p>
+        <p style={{ fontSize: '0.85rem' }}>Vibe Coded by Jas 💫</p>
       </footer>
     </div>
   );
