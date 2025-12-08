@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Space Camp Bach",
+  "name": "Space Camp Bachelorette",
+  "description": "Join Jasmine for an epic Space Camp Bachelorette weekend! Experience astronaut training, space missions, and graduate as trained astronauts.",
   "icons": [
     {
       "src": "favicon.ico",
