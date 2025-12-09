@@ -174,7 +174,7 @@ body::after {
 /* Navigation */
 .navigation {
   background: linear-gradient(90deg, var(--vaporwave-purple) 0%, var(--vaporwave-pink) 50%, var(--soft-purple) 100%);
-  padding: 1.5rem;
+  padding: 0.75rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -189,7 +189,7 @@ body::after {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .nav-button {
@@ -197,14 +197,14 @@ body::after {
   backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.3);
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-family: 'Fredoka', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
   border-radius: 25px;
   box-shadow: 0 4px 15px rgba(255, 16, 240, 0.2);
   text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
@@ -567,9 +567,19 @@ body::after {
     font-size: 2rem;
   }
 
+  .navigation {
+    padding: 0.5rem;
+  }
+
+  .nav-container {
+    gap: 0.4rem;
+  }
+
   .nav-button {
-    font-size: 0.85rem;
-    padding: 0.6rem 1.2rem;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+    letter-spacing: 0px;
+    border-radius: 20px;
   }
 
   .guest-grid {
@@ -578,5 +588,20 @@ body::after {
 
   .recommendations-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    padding: 0.4rem;
+  }
+
+  .nav-container {
+    gap: 0.3rem;
+  }
+
+  .nav-button {
+    font-size: 0.65rem;
+    padding: 0.35rem 0.7rem;
   }
 }
