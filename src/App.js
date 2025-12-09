@@ -75,6 +75,22 @@ function App() {
             {data.spaceCamp.about}
           </p>
 
+          <h3 className="section-subtitle">Schedule</h3>
+          <div style={{ background: 'rgba(255, 110, 199, 0.1)', padding: '1rem', borderRadius: '15px', marginBottom: '1.5rem', borderLeft: '4px solid #FF6EC7' }}>
+            <p style={{ margin: '0.5rem 0', fontSize: '1rem', color: '#2d2d2d', fontWeight: '500' }}>
+              <strong>Duration:</strong> {data.spaceCamp.schedule.duration}
+            </p>
+            <p style={{ margin: '0.5rem 0', fontSize: '1rem', color: '#2d2d2d', fontWeight: '500' }}>
+              <strong>Check-In:</strong> {data.spaceCamp.schedule.checkIn}
+            </p>
+            <p style={{ margin: '0.5rem 0', fontSize: '1rem', color: '#2d2d2d', fontWeight: '500' }}>
+              <strong>Graduation:</strong> {data.spaceCamp.schedule.graduation}
+            </p>
+            <p style={{ margin: '0.75rem 0 0 0', fontSize: '0.95rem', color: '#555', fontStyle: 'italic', borderTop: '1px solid rgba(255, 110, 199, 0.3)', paddingTop: '0.75rem' }}>
+              {data.spaceCamp.schedule.note}
+            </p>
+          </div>
+
           <h3 className="section-subtitle">What's Included</h3>
           <ul className="checklist">
             {data.spaceCamp.included.map((item, index) => (

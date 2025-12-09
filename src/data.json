@@ -8,6 +8,12 @@
   },
   "spaceCamp": {
     "about": "Spend a weekend training as an astronaut. The Adult Space Academy is a 3-day, 2-night immersive program for adults (18+) at the U.S. Space & Rocket Center in Huntsville, Alabama. You'll assume real astronaut roles, complete hands-on space missions, and graduate with your astronaut certificate.",
+    "schedule": {
+      "duration": "3 days, 2 nights",
+      "checkIn": "Friday, 2 – 3 p.m. (CT)",
+      "graduation": "Sunday, 11 a.m. (CT)",
+      "note": "Graduation concludes camp on Sunday, allowing you to explore the Rocket Center at your own pace."
+    },
     "included": [
       "Multi-Axis Trainer (MAT) astronaut training",
       "Model rocket construction and launch",
