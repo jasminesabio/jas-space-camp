@@ -149,7 +149,7 @@ function App() {
         <section id="recommendations" className="section">
           <h2 className="section-title">Recommendations</h2>
           <p style={{ fontSize: '1.05rem', marginBottom: '1.25rem', color: '#2d2d2d', fontWeight: '500', lineHeight: '1.6' }}>
-            Get in the space camp mood with these picks!
+            Some sci-fi recommendations to get you ready for the weekend.
           </p>
           <div className="recommendations-grid">
             {data.recommendations.map((item, index) => (

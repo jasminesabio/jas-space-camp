@@ -7,7 +7,7 @@
     "weddingDate": "March 7, 2026"
   },
   "spaceCamp": {
-    "about": "Experience a weekend as an astronaut! The Adult Space Academy is a 3-day, 2-night immersive training program for adults (18+) at the U.S. Space & Rocket Center in Huntsville, Alabama. Assume real astronaut roles, complete hands-on space missions, and graduate as trained astronauts!",
+    "about": "Spend a weekend training as an astronaut. The Adult Space Academy is a 3-day, 2-night immersive program for adults (18+) at the U.S. Space & Rocket Center in Huntsville, Alabama. You'll assume real astronaut roles, complete hands-on space missions, and graduate with your astronaut certificate.",
     "included": [
       "Multi-Axis Trainer (MAT) astronaut training",
       "Model rocket construction and launch",
@@ -147,7 +147,7 @@
       "types": ["Book", "Movie"],
       "author": "Andy Weir",
       "year": "2011 (Book) / 2015 (Movie)",
-      "why": "Stranded on Mars with science and humor. Available as both book and movie!"
+      "why": "Stranded on Mars with science and humor. Great in both formats."
     },
     {
       "title": "Arrival",
@@ -168,7 +168,7 @@
       "types": ["Book", "TV Show"],
       "author": "Liu Cixin",
       "year": "2008 (Book) / 2023 (TV Show)",
-      "why": "Mind-bending first contact hard sci-fi. Experience it both ways!"
+      "why": "Mind-bending first contact hard sci-fi. Both the book and Netflix series are worth your time."
     }
   ]
 }
