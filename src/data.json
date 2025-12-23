@@ -175,6 +175,13 @@
       "author": "Liu Cixin",
       "year": "2008 (Book) / 2023 (TV Show)",
       "why": "Mind-bending first contact hard sci-fi. Both the book and Netflix series are worth your time."
+    },
+    {
+      "title": "Project Hail Mary",
+      "types": ["Book", "Movie"],
+      "author": "Andy Weir",
+      "year": "2021 (Book) / March 2026 (Movie)",
+      "why": "A lone astronaut on a mission to save humanity. From the author of The Martian, with the same wit and hard science."
     }
   ]
 }
