@@ -71,11 +71,6 @@
       "travelingFrom": "Mexico City, Mexico"
     },
     {
-      "name": "Becky",
-      "role": "Space Cadet",
-      "travelingFrom": "Mexico City, Mexico"
-    },
-    {
       "name": "Christina",
       "role": "Space Cadet",
       "travelingFrom": "Brooklyn, New York"
@@ -101,9 +96,9 @@
       "travelingFrom": "Brooklyn, New York"
     },
     {
-      "name": "Fernanda",
+      "name": "Estela",
       "role": "Space Cadet",
-      "travelingFrom": "San Diego, California"
+      "travelingFrom": "Brooklyn, New York"
     },
     {
       "name": "Garrett",
@@ -116,14 +111,14 @@
       "travelingFrom": "Portland, Oregon"
     },
     {
+      "name": "Patricia",
+      "role": "Space Cadet",
+      "travelingFrom": "Mexico City, Mexico"
+    },
+    {
       "name": "Ross",
       "role": "Space Cadet",
       "travelingFrom": "Brooklyn, New York"
-    },
-    {
-      "name": "Yulia",
-      "role": "Space Cadet",
-      "travelingFrom": "Mexico City, Mexico"
     }
   ],
   "packingGuide": {
