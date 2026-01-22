@@ -97,13 +97,6 @@ function App() {
               <li key={index}>{item}</li>
             ))}
           </ul>
-
-          <h3 className="section-subtitle">Not Included</h3>
-          <ul className="checklist x-list">
-            {data.spaceCamp.notIncluded.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
         </section>
 
         <section id="expenses" className="section">
