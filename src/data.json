@@ -58,62 +58,197 @@
     {
       "name": "Jasmine",
       "role": "Space Commander",
-      "travelingFrom": "Mexico City, Mexico"
+      "travelingFrom": "Mexico City, Mexico",
+      "bio": {
+        "photo": "/images/cadets/jasmine.jpeg",
+        "facts": [
+          "add first fact here",
+          "add second fact here",
+          "add third fact here"
+        ]
+      }
     },
     {
       "name": "Jesse",
       "role": "Mission Commander",
-      "travelingFrom": "Cavite, Philippines"
+      "travelingFrom": "Cavite, Philippines",
+      "bio": {
+        "photo": "/images/cadets/jesse.jpeg",
+        "facts": [
+          "didn't like eating vegetables growing up",
+          "surfing is her happy place",
+          "cares for the earth with mindful recycling and ethically sourced clothes"
+        ]
+      }
+    },
+    {
+      "name": "Angelo",
+      "role": "Space Cadet",
+      "travelingFrom": "Mexico City, Mexico",
+      "bio": {
+        "photo": "/images/cadets/angelo.jpeg",
+        "facts": [
+          "add first fact here",
+          "add second fact here",
+          "add third fact here"
+        ]
+      }
     },
     {
       "name": "Christina",
       "role": "Space Cadet",
-      "travelingFrom": "Brooklyn, New York"
+      "travelingFrom": "Brooklyn, New York",
+      "bio": {
+        "photo": "/images/cadets/christina.jpeg",
+        "facts": [
+          "yoga inversion in nature queen",
+          "loves rupaul's drag race",
+          "her carry on for flights are almost always a duffel"
+        ]
+      }
+    },
+    {
+      "name": "Dan",
+      "role": "Space Cadet",
+      "travelingFrom": "Mexico City, Mexico",
+      "bio": {
+        "photo": "/images/cadets/dan.jpeg",
+        "facts": [
+          "add first fact here",
+          "add second fact here",
+          "add third fact here"
+        ]
+      }
     },
     {
       "name": "Deena",
       "role": "Space Cadet",
-      "travelingFrom": "Los Angeles, California"
+      "travelingFrom": "Los Angeles, California",
+      "bio": {
+        "photo": "/images/cadets/deena.jpeg",
+        "facts": [
+          "signature color is royal blue",
+          "favorite label is geigling",
+          "went to undergrad in australia"
+        ]
+      }
     },
     {
       "name": "Dyson",
       "role": "Space Cadet",
-      "travelingFrom": "Los Angeles, California"
+      "travelingFrom": "Los Angeles, California",
+      "bio": {
+        "photo": "/images/cadets/dyson.jpeg",
+        "facts": [
+          "walking pop culture wikipedia",
+          "convinced to move to NYC at brooklyn mirage in 2019",
+          "screenwriter"
+        ]
+      }
     },
     {
       "name": "Emily",
       "role": "Space Cadet",
-      "travelingFrom": "Brooklyn, New York"
+      "travelingFrom": "Brooklyn, New York",
+      "bio": {
+        "photo": "/images/cadets/emily.jpeg",
+        "facts": [
+          "moved to nyc with a writer's dream and crushed it (is still crushing it)",
+          "cat momma",
+          "ready for any dance break in 5 6 7 8"
+        ]
+      }
     },
     {
       "name": "Erin",
       "role": "Space Cadet",
-      "travelingFrom": "Brooklyn, New York"
+      "travelingFrom": "Brooklyn, New York",
+      "bio": {
+        "photo": "/images/cadets/erin.jpeg",
+        "facts": [
+          "muji lover",
+          "will go to war for her friends",
+          "made bobs cool again in 2021"
+        ]
+      }
     },
     {
       "name": "Estela",
       "role": "Space Cadet",
-      "travelingFrom": "Brooklyn, New York"
+      "travelingFrom": "Brooklyn, New York",
+      "bio": {
+        "photo": "/images/cadets/estela.jpeg",
+        "facts": [
+          "queen of 'trips'",
+          "likes eating tuna out of a can in her burning man tent",
+          "cooks on the decks"
+        ]
+      }
     },
     {
       "name": "Garrett",
       "role": "Space Cadet",
-      "travelingFrom": "Portland, Oregon"
+      "travelingFrom": "Portland, Oregon",
+      "bio": {
+        "photo": "/images/cadets/garrett.jpeg",
+        "facts": [
+          "motorcycle boi",
+          "not an la dodgers fan",
+          "gives you a safe space for heart to hearts"
+        ]
+      }
+    },
+    {
+      "name": "Joel",
+      "role": "Space Cadet",
+      "travelingFrom": "Huntsville, Alabama",
+      "bio": {
+        "photo": "/images/cadets/joel.jpeg",
+        "facts": [
+          "add first fact here",
+          "add second fact here",
+          "add third fact here"
+        ]
+      }
     },
     {
       "name": "Kayla",
       "role": "Space Cadet",
-      "travelingFrom": "Portland, Oregon"
+      "travelingFrom": "Portland, Oregon",
+      "bio": {
+        "photo": "/images/cadets/kayla.jpeg",
+        "facts": [
+          "add first fact here",
+          "add second fact here",
+          "add third fact here"
+        ]
+      }
     },
     {
       "name": "Patricia",
       "role": "Space Cadet",
-      "travelingFrom": "Mexico City, Mexico"
+      "travelingFrom": "Mexico City, Mexico",
+      "bio": {
+        "photo": "/images/cadets/patricia.jpeg",
+        "facts": [
+          "add first fact here",
+          "add second fact here",
+          "add third fact here"
+        ]
+      }
     },
     {
       "name": "Ross",
       "role": "Space Cadet",
-      "travelingFrom": "Brooklyn, New York"
+      "travelingFrom": "Brooklyn, New York",
+      "bio": {
+        "photo": "/images/cadets/ross.jpeg",
+        "facts": [
+          "add first fact here",
+          "add second fact here",
+          "add third fact here"
+        ]
+      }
     }
   ],
   "packingGuide": {

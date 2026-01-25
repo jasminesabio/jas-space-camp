@@ -1,9 +1,73 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import data from './data.json';
 
+const SITE_PASSWORD = 'wafflehouse'; // Change this to your desired password
+
 function App() {
   const [activeSection, setActiveSection] = useState('all');
+  const [selectedGuest, setSelectedGuest] = useState(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [passwordInput, setPasswordInput] = useState('');
+  const [passwordError, setPasswordError] = useState(false);
+
+  useEffect(() => {
+    // Check if already authenticated
+    const auth = localStorage.getItem('spaceCampAuth');
+    if (auth === 'true') {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === 'Escape' && selectedGuest) {
+        setSelectedGuest(null);
+      }
+    };
+
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [selectedGuest]);
+
+  const handlePasswordSubmit = (e) => {
+    e.preventDefault();
+    if (passwordInput === SITE_PASSWORD) {
+      setIsAuthenticated(true);
+      localStorage.setItem('spaceCampAuth', 'true');
+      setPasswordError(false);
+    } else {
+      setPasswordError(true);
+    }
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="password-gate">
+        <div className="password-container">
+          <h1>🚀 Space Camp Bachelorette 🚀</h1>
+          <p>Enter the password to access this private event page</p>
+          <form onSubmit={handlePasswordSubmit}>
+            <input
+              type="password"
+              value={passwordInput}
+              onChange={(e) => {
+                setPasswordInput(e.target.value);
+                setPasswordError(false);
+              }}
+              placeholder="Enter password"
+              className="password-input"
+              autoFocus
+            />
+            <button type="submit" className="password-submit">
+              Enter
+            </button>
+            {passwordError && <p className="password-error">Incorrect password. Try again!</p>}
+          </form>
+        </div>
+      </div>
+    );
+  }
 
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId);
@@ -126,12 +190,21 @@ function App() {
           <h2 className="section-title">Guest Directory</h2>
           <div className="guest-grid">
             {data.guests.map((guest, index) => (
-              <div key={index} className="guest-card">
+              <div
+                key={index}
+                className={`guest-card ${guest.bio ? 'clickable' : ''}`}
+                onClick={() => guest.bio && setSelectedGuest(guest)}
+              >
                 <div className="guest-name">{guest.name}</div>
                 <div className="guest-role">{guest.role}</div>
                 <div className="guest-info">
                   <strong>Earthling Base:</strong> {guest.travelingFrom}
                 </div>
+                {guest.bio && (
+                  <button className="view-bio-btn">
+                    View Bio ✨
+                  </button>
+                )}
               </div>
             ))}
           </div>
@@ -184,6 +257,28 @@ function App() {
         <p>See you in space, astronauts! </p>
         <p style={{ fontSize: '0.85rem' }}>Vibe Coded by Jas 💫</p>
       </footer>
+
+      {selectedGuest && (
+        <div className="modal-overlay" onClick={() => setSelectedGuest(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setSelectedGuest(null)}>×</button>
+            <div className="bio-card">
+              <div className="bio-image-container">
+                <img src={selectedGuest.bio.photo} alt={selectedGuest.name} className="bio-image" />
+              </div>
+              <div className="bio-info">
+                <h2 className="bio-name">{selectedGuest.name}</h2>
+                <div className="bio-location">Earthling Base: {selectedGuest.travelingFrom}</div>
+                <ul className="bio-facts">
+                  {selectedGuest.bio.facts.map((fact, index) => (
+                    <li key={index}>{fact}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
