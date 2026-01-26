@@ -58,15 +58,7 @@
     {
       "name": "Jasmine",
       "role": "Space Commander",
-      "travelingFrom": "Mexico City, Mexico",
-      "bio": {
-        "photo": "/images/cadets/jasmine.jpeg",
-        "facts": [
-          "add first fact here",
-          "add second fact here",
-          "add third fact here"
-        ]
-      }
+      "travelingFrom": "Mexico City, Mexico"
     },
     {
       "name": "Jesse",
@@ -75,7 +67,7 @@
       "bio": {
         "photo": "/images/cadets/jesse.jpeg",
         "facts": [
-          "didn't like eating vegetables growing up",
+          "was on the football team in middle school",
           "surfing is her happy place",
           "cares for the earth with mindful recycling and ethically sourced clothes"
         ]
@@ -88,9 +80,9 @@
       "bio": {
         "photo": "/images/cadets/angelo.jpeg",
         "facts": [
-          "add first fact here",
-          "add second fact here",
-          "add third fact here"
+          "supports female DJs",
+          "got into the burning man scene through NASA heads",
+          "natural community grower + contributor"
         ]
       }
     },
@@ -114,9 +106,9 @@
       "bio": {
         "photo": "/images/cadets/dan.jpeg",
         "facts": [
-          "add first fact here",
-          "add second fact here",
-          "add third fact here"
+          "chelsea and dodgers fan",
+          "got arrested during mardi gras",
+          "he got a curfew ticket at a rave when he was 16"
         ]
       }
     },
@@ -142,7 +134,7 @@
         "facts": [
           "walking pop culture wikipedia",
           "convinced to move to NYC at brooklyn mirage in 2019",
-          "screenwriter"
+          "told his doctor he was having a brat summer"
         ]
       }
     },
@@ -153,7 +145,7 @@
       "bio": {
         "photo": "/images/cadets/emily.jpeg",
         "facts": [
-          "moved to nyc with a writer's dream and crushed it (is still crushing it)",
+          "certified tavern wench",
           "cat momma",
           "ready for any dance break in 5 6 7 8"
         ]
@@ -205,9 +197,9 @@
       "bio": {
         "photo": "/images/cadets/joel.jpeg",
         "facts": [
-          "add first fact here",
-          "add second fact here",
-          "add third fact here"
+          "wore soccer goggles before they were cool",
+          "faced his bullies in elementary schools by bumping into their elbows so they dropped their books",
+          "tyler the creator super fan"
         ]
       }
     },
@@ -218,9 +210,9 @@
       "bio": {
         "photo": "/images/cadets/kayla.jpeg",
         "facts": [
-          "add first fact here",
-          "add second fact here",
-          "add third fact here"
+          "pickles are life",
+          "boob artist",
+          "champion of puke and rallies"
         ]
       }
     },
@@ -231,9 +223,9 @@
       "bio": {
         "photo": "/images/cadets/patricia.jpeg",
         "facts": [
-          "add first fact here",
-          "add second fact here",
-          "add third fact here"
+          "architecture connoisseur",
+          "had an ecuadorian pen pal boyfriend in high school",
+          "believes juan gabriel is alive"
         ]
       }
     },
@@ -244,48 +236,50 @@
       "bio": {
         "photo": "/images/cadets/ross.jpeg",
         "facts": [
-          "add first fact here",
-          "add second fact here",
-          "add third fact here"
+          "moonlights as a yoga instructor",
+          "likes cocktails with egg whites",
+          "photo documents disco balls"
         ]
       }
     }
   ],
   "packingGuide": {
-    "essentials": [
-      "Closed-toe athletic shoes (required for all training activities)",
-      "Comfortable athletic/casual clothing for 3 days",
-      "Pajamas for 2 nights",
-      "Toiletries and any necessary medications",
-      "Phone/camera charger",
-      "ID or driver's license (needed for check-in)",
-      "Underwear and socks for 3 days",
-      "Layers - indoor facilities can be cool"
+    "weather": {
+      "description": "It's going to be COLD in Huntsville this weekend! Expect highs in the mid-to-upper 30s°F and lows dropping to 15-20°F at night.",
+      "forecast": [
+        "Thursday, Jan 30: Sunny, highs mid 30s°F, lows 15-20°F",
+        "Friday, Jan 31: Partly cloudy, highs upper 30s°F, lows 15-20°F",
+        "Saturday, Feb 1: Partly cloudy, highs upper 30s°F, lows 15-20°F"
+      ],
+      "recommendation": "Pack warm layers, a heavy winter jacket, gloves, beanie, and warm socks."
+    },
+    "spaceCamp": [
+      "Bed linens (sheets, pillow case, blanket) - can be rented for $10 at camp",
+      "Padlock for lockers",
+      "Towel",
+      "Casual clothes/active wear for missions",
+      "Closed-toe athletic shoes",
+      "Water bottle",
+      "Day pack/tote bag"
     ],
-    "optional": [
-      "Space-themed outfit or accessories for fun photos",
-      "Notebook and pen for mission notes",
-      "Light jacket or sweatshirt",
-      "Sunglasses and sunscreen",
-      "Comfortable shoes for casual wear",
-      "Extra phone charger",
-      "Cash for gift shop souvenirs"
+    "huntsvilleActivities": [
+      "Clothes for casual outing in downtown Huntsville for drinks"
     ]
   },
   "recommendations": [
-    {
-      "title": "The Martian",
-      "types": ["Book", "Movie"],
-      "author": "Andy Weir",
-      "year": "2011 (Book) / 2015 (Movie)",
-      "why": "Stranded on Mars with science and humor. Great in both formats."
-    },
     {
       "title": "Arrival",
       "types": ["Movie"],
       "author": "Denis Villeneuve (Director)",
       "year": "2016",
       "why": "Stunning sci-fi about communication with aliens"
+    },
+    {
+      "title": "Project Hail Mary",
+      "types": ["Book", "Movie"],
+      "author": "Andy Weir",
+      "year": "2021 (Book) / March 2026 (Movie)",
+      "why": "A lone astronaut on a mission to save humanity. From the author of The Martian, with the same wit and hard science."
     },
     {
       "title": "The Expanse",
@@ -295,18 +289,18 @@
       "why": "Epic space opera set across the solar system"
     },
     {
+      "title": "The Martian",
+      "types": ["Book", "Movie"],
+      "author": "Andy Weir",
+      "year": "2011 (Book) / 2015 (Movie)",
+      "why": "Stranded on Mars with science and humor. Great in both formats."
+    },
+    {
       "title": "Three Body Problem",
       "types": ["Book", "TV Show"],
       "author": "Liu Cixin",
       "year": "2008 (Book) / 2023 (TV Show)",
       "why": "Mind-bending first contact hard sci-fi. Both the book and Netflix series are worth your time."
-    },
-    {
-      "title": "Project Hail Mary",
-      "types": ["Book", "Movie"],
-      "author": "Andy Weir",
-      "year": "2021 (Book) / March 2026 (Movie)",
-      "why": "A lone astronaut on a mission to save humanity. From the author of The Martian, with the same wit and hard science."
     }
   ]
 }

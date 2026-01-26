@@ -106,12 +106,6 @@ function App() {
             Space Camp
           </button>
           <button
-            className={`nav-button ${activeSection === 'expenses' ? 'active' : ''}`}
-            onClick={() => scrollToSection('expenses')}
-          >
-            Expenses
-          </button>
-          <button
             className={`nav-button ${activeSection === 'guests' ? 'active' : ''}`}
             onClick={() => scrollToSection('guests')}
           >
@@ -128,6 +122,12 @@ function App() {
             onClick={() => scrollToSection('recommendations')}
           >
             Recommendations
+          </button>
+          <button
+            className={`nav-button ${activeSection === 'expenses' ? 'active' : ''}`}
+            onClick={() => scrollToSection('expenses')}
+          >
+            Expenses
           </button>
         </div>
       </nav>
@@ -163,29 +163,6 @@ function App() {
           </ul>
         </section>
 
-        <section id="expenses" className="section">
-          <h2 className="section-title">Expenses</h2>
-
-          <div className="expense-card">
-            <h3>Space Camp Tuition</h3>
-            <div className="expense-amount">{data.expenses.spaceCampTuition.amount}</div>
-            <p>{data.expenses.spaceCampTuition.description}</p>
-          </div>
-
-          <h3 className="section-subtitle">Additional Estimated Costs</h3>
-          {data.expenses.additionalCosts.map((cost, index) => (
-            <div key={index} className="expense-card">
-              <h3>{cost.item}</h3>
-              <div className="expense-amount">{cost.estimatedCost}</div>
-              <p>{cost.notes}</p>
-            </div>
-          ))}
-
-          <div className="total-estimate">
-            Total Estimated Cost: {data.expenses.totalEstimate}
-          </div>
-        </section>
-
         <section id="guests" className="section">
           <h2 className="section-title">Guest Directory</h2>
           <div className="guest-grid">
@@ -213,16 +190,37 @@ function App() {
         <section id="packing" className="section">
           <h2 className="section-title">Packing Guide</h2>
 
-          <h3 className="section-subtitle">Essentials</h3>
+          {data.packingGuide.weather && (
+            <>
+              <h3 className="section-subtitle">Weather Forecast</h3>
+              <div style={{ background: 'rgba(100, 149, 237, 0.15)', padding: '1rem', borderRadius: '15px', marginBottom: '1.5rem', borderLeft: '4px solid #6495ED' }}>
+                <p style={{ margin: '0.5rem 0', fontSize: '1rem', color: '#2d2d2d', fontWeight: '500', lineHeight: '1.6' }}>
+                  {data.packingGuide.weather.description}
+                </p>
+                {data.packingGuide.weather.forecast && (
+                  <ul style={{ margin: '1rem 0', padding: '0 0 0 1.5rem', fontSize: '0.95rem', color: '#2d2d2d', lineHeight: '1.8' }}>
+                    {data.packingGuide.weather.forecast.map((day, index) => (
+                      <li key={index}>{day}</li>
+                    ))}
+                  </ul>
+                )}
+                <p style={{ margin: '0.75rem 0 0 0', fontSize: '0.95rem', color: '#555', fontWeight: '600', borderTop: '1px solid rgba(100, 149, 237, 0.3)', paddingTop: '0.75rem' }}>
+                  {data.packingGuide.weather.recommendation}
+                </p>
+              </div>
+            </>
+          )}
+
+          <h3 className="section-subtitle">For Space Camp</h3>
           <ul className="checklist">
-            {data.packingGuide.essentials.map((item, index) => (
+            {data.packingGuide.spaceCamp.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
 
-          <h3 className="section-subtitle">Optional But Recommended</h3>
+          <h3 className="section-subtitle">For Huntsville Activities</h3>
           <ul className="checklist">
-            {data.packingGuide.optional.map((item, index) => (
+            {data.packingGuide.huntsvilleActivities.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
@@ -249,6 +247,29 @@ function App() {
                 <div className="recommendation-why">{item.why}</div>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section id="expenses" className="section">
+          <h2 className="section-title">Expenses</h2>
+
+          <div className="expense-card">
+            <h3>Space Camp Tuition</h3>
+            <div className="expense-amount">{data.expenses.spaceCampTuition.amount}</div>
+            <p>{data.expenses.spaceCampTuition.description}</p>
+          </div>
+
+          <h3 className="section-subtitle">Additional Estimated Costs</h3>
+          {data.expenses.additionalCosts.map((cost, index) => (
+            <div key={index} className="expense-card">
+              <h3>{cost.item}</h3>
+              <div className="expense-amount">{cost.estimatedCost}</div>
+              <p>{cost.notes}</p>
+            </div>
+          ))}
+
+          <div className="total-estimate">
+            Total Estimated Cost: {data.expenses.totalEstimate}
           </div>
         </section>
       </main>
