@@ -938,9 +938,19 @@ body::after {
   .bio-image-container {
     width: 100%;
     min-height: 200px;
-    max-height: 250px;
+    max-height: 300px;
     border-right: none;
     border-bottom: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bio-image {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
   }
 
   .bio-info {
