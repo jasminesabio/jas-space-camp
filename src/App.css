@@ -910,8 +910,25 @@ body::after {
     grid-template-columns: 1fr;
   }
 
-  .bio-name {
-    font-size: 2.5rem;
+  /* Mobile Modal Improvements */
+  .modal-overlay {
+    padding: 0.5rem;
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+
+  .modal-close {
+    width: 45px;
+    height: 45px;
+    font-size: 1.8rem;
+    top: -10px;
+    right: -10px;
   }
 
   .bio-card {
@@ -920,21 +937,36 @@ body::after {
 
   .bio-image-container {
     width: 100%;
-    min-height: 280px;
+    min-height: 200px;
+    max-height: 250px;
     border-right: none;
     border-bottom: 5px solid white;
   }
 
-  .bio-facts li {
-    font-size: 1.1rem;
-    padding: 0.9rem 1.2rem;
-    padding-left: 2.8rem;
+  .bio-info {
+    padding: 1.5rem 1rem;
   }
 
-  .modal-close {
-    width: 40px;
-    height: 40px;
-    font-size: 1.8rem;
+  .bio-name {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .bio-location {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .bio-facts li {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    padding-left: 2.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .bio-facts li::before {
+    font-size: 1.2rem;
+    left: 0.8rem;
   }
 }
 
